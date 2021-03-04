@@ -1,0 +1,76 @@
+
+body {
+  position: relative;
+  margin: 0; padding: 0;
+}
+
+//ВКЛЮЧАЕМ ПЕРЕНОСЫ В ТЕКСТЕ
+.hyphens_on {
+  overflow-wrap: normal; /* не поддерживает IE, Firefox; является копией word-wrap */
+  word-wrap: normal;
+  word-break: normal; /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+  line-break: auto; /* нет поддержки для русского языка */
+  -webkit-hyphens: auto;
+  ​-ms-hyphens: auto;
+  hyphens: auto; /* значение auto не поддерживается Chrome */
+}
+//*OVER
+
+//ВЫКЛЮЧАЕМ ПЕРЕНОСЫ В ТЕКСТЕ
+.hyphens_off {
+  overflow-wrap: normal; /* не поддерживает IE, Firefox; является копией word-wrap */
+  word-wrap: normal;
+  word-break: normal; /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+  line-break: auto; /* нет поддержки для русского языка */
+  -webkit-hyphens: none;
+  ​-ms-hyphens: none;
+  hyphens: none; /* значение auto не поддерживается Chrome */
+}
+//*OVER
+
+//ВКЛЮЧАЕМ POSITION СТИКИ НА ЭЛЕМЕНТЕ
+.sticky {
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: -ms-sticky !important;
+  position: -o-sticky !important;
+  position: sticky !important;
+}
+//*OVER
+
+//ВЫКЛЮЧАЕМ ВОЗОЖНОСТЬ ВЫДЕЛЕНИЯ НА ЭЛЕМЕНТЕ
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+//*OVER
+
+ul,
+li {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  width: 100%;
+  height: auto;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus,
+select:focus,
+input:focus {
+  outline: 0;
+}
